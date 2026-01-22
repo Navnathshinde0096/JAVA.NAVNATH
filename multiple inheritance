@@ -1,0 +1,26 @@
+interface  A{
+  void show();
+}
+
+interface B{
+  void show1();
+}
+
+class C implements A,B{
+ public  void show(){
+    System.out.println("i am class a");
+  }
+  public void show1(){
+    System.out.println("i am class b");
+  }
+}
+
+class Demo{
+    public static void main(String[] args) {
+      C c=new C();
+      c.show();
+      c.show1();
+}
+}
+
+use public keywoerd with function when you retern its body
