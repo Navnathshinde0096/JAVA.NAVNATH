@@ -1,0 +1,20 @@
+interface Factorial {
+    int calculate(int n);  // फक्त method signature, body नाही
+}
+class FactorialImpl implements Factorial {
+    // Interface चा method implement करत आहोत
+    public int calculate(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
+class Demo {
+    public static void main(String[] args) {
+        Factorial f = new FactorialImpl();  // Interface type reference
+        int num = 5;
+        System.out.println("Factorial of " + num + " is " + f.calculate(num));
+    }
+}
