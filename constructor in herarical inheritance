@@ -1,0 +1,53 @@
+class A{
+int a;
+int b;
+A(int x,int y){
+  a=x;
+  b=y; 
+}
+void putdata(){
+System.out.println("value of a is "+ a);
+System.out.println("value of b is "+ b);
+}
+}
+
+class B extends A{
+int c;
+int d;
+B(int x,int y,int z,int v){
+  super(x, y);
+  c=z;
+  d=v;
+}
+void putdata2(){
+System.out.println("value of a is "+ c);
+System.out.println("value of b is "+ d);
+}
+}
+
+
+class C extends A{
+int c;
+int d;
+C(int x,int y,int z,int v){
+  super(x, y);
+  c=z;
+  d=v;
+}
+void putdata2(){
+System.out.println("value of a is "+ c);
+System.out.println("value of b is "+ d);
+}
+}
+
+
+class Demo{
+    public static void main(String[] args) {
+      B b=new B(1,2,3,4);
+      C c=new C(5,6,7,8);
+      b.putdata();
+      b.putdata2();
+      c.putdata();
+      c.putdata2();
+    }
+}
