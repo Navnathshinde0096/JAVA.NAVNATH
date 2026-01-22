@@ -1,0 +1,29 @@
+class A{
+  String a;
+  A(){
+    a="navnath";
+  }
+  void show1(){
+ System.out.println("value of a is "+a);
+  }
+  
+}
+
+class B extends A{
+  void show(){
+    show1();
+    System.out.println("hello i a child class");
+  }
+}
+class Demo{
+    public static void main(String[] args) {
+      B b=new B();
+      b.show();
+      
+}
+}
+
+
+output:-
+value of a is navnath
+hello i a child class
