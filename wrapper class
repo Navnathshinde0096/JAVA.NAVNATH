@@ -1,0 +1,38 @@
+class Demo {
+    public static void main(String[] args) {
+
+        // String → primitive / wrapper conversions
+        int i = Integer.parseInt(args[0]);
+        float f = Float.parseFloat(args[1]);
+        double d = Double.parseDouble(args[2]);
+        long l = Long.parseLong(args[3]);
+        boolean b = Boolean.parseBoolean(args[4]);
+        char c = args[5].charAt(0);
+
+        // primitive → wrapper (auto boxing)
+        Integer wi = i;
+        Float wf = f;
+        Double wd = d;
+
+        // wrapper → primitive (unboxing)
+        int ui = wi;
+        float uf = wf;
+
+        // number → String
+        String si = String.valueOf(i);
+        String sf = String.valueOf(f);
+
+        System.out.println("int value = " + i);
+        System.out.println("float value = " + f);
+        System.out.println("double value = " + d);
+        System.out.println("long value = " + l);
+        System.out.println("boolean value = " + b);
+        System.out.println("char value = " + c);
+
+        System.out.println("Wrapper Integer = " + wi);
+        System.out.println("Unboxed int = " + ui);
+
+        System.out.println("int to String = " + si);
+        System.out.println("float to String = " + sf);
+    }
+}
