@@ -1,0 +1,23 @@
+// File: MyMath.java
+package mypackage;   // package name
+
+public class MyMath {
+    // Factorial method
+    public int factorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
+// File: Demo.java
+import mypackage.MyMath;  // package import
+
+class Demo {
+    public static void main(String[] args) {
+        MyMath m = new MyMath();   // object create
+        int num = 5;
+        System.out.println("Factorial of " + num + " is " + m.factorial(num));
+    }
+}
