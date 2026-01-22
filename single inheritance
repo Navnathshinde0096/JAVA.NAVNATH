@@ -1,0 +1,24 @@
+class A{
+int a=5;
+int b=6;
+void getdata(){
+System.out.println("value of a is " +a);
+}
+}
+
+class B extends A{
+   void getdata1(){
+
+    System.out.println("value of b is "+b);
+   }
+}
+
+
+class Demo{
+    public static void main(String[] args) {
+      B b=new B();
+      b.getdata();
+      b.getdata1();
+    
+    }
+}
