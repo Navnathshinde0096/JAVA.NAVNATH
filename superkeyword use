@@ -1,0 +1,22 @@
+class A{
+  void show(){
+ System.out.println("hello i am parent class");
+  }
+}
+
+class B extends A{
+  void show(){
+    super.show();
+    System.out.println("hello i a child class");
+  }
+}
+class Demo{
+    public static void main(String[] args) {
+      B b=new B();
+      b.show();
+      
+}
+}
+
+
+function with same name than we have to call function in class than we use super keyword
