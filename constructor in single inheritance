@@ -1,0 +1,36 @@
+class A{
+int a;
+int b;
+
+A(int x,int y){
+a=x;
+b=y;
+}
+
+void getdata(){
+System.out.println("value of a is " +a);
+}
+}
+
+class B extends A{
+int c;
+  B(int x,int y,int z){
+    super(x, y);
+    c=z;
+  }
+   void getdata1(){
+    
+  System.out.println("value of c is "+ c);
+  System.out.println("value of b is "+ b);
+   }
+}
+
+
+class Demo{
+    public static void main(String[] args) {
+      B b=new B(1,2,3);
+      b.getdata();
+      b.getdata1();
+    
+    }
+}
